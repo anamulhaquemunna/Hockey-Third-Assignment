@@ -38,33 +38,71 @@
 
 <body class="font-manrope">
     <header>
+        <nav class="container w-11/12 mx-auto mt-7">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a class=" font-bold text-red-500">Home</a></li>
+                            
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="text-3xl font-extrabold">Hockey<span class="text-red-500">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a class=" font-bold text-red-500">Home</a></li>
+                            
+                            <li><a>About</a></li>
+                            <li><a>Pages</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end gap-4">
+                    <img src="Images/search-icon.svg" alt="">
+                    <a class="btn bg-red-500 text-white lg:w-36">Button</a>
+                </div>
+            </div>
 
+        </nav>
     </header>
 
-    <main >
+    <main>
         <section>
-            <div class="container w-11/12 mx-auto relative">
-                <div class="carousel w-full rounded-2xl">
-                    <div id="slide1" class="carousel-item relative w-full h-[60vh] ">
-                        <img src="Images/trophy.png"
-                            class="w-full" />
+            <div class="container w-11/12 mx-auto relative mt-4">
+                <div class="carousel w-full rounded-2xl lg:h-[60vh]">
+                    <div id="slide1" class="carousel-item relative w-full  ">
+                        <img src="Images/trophy.png" class="w-full" />
                         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 ">
                             <a href="#slide4" class="btn btn-circle">❮</a>
                             <a href="#slide2" class="btn btn-circle">❯</a>
                         </div>
                     </div>
-                    <div id="slide2" class="carousel-item relative w-full h-[60vh] ">
-                        <img src="Images/slider.jpg"
-                            class="w-full" />
+                    <div id="slide2" class="carousel-item relative w-full  ">
+                        <img src="Images/slider.jpg" class="w-full" />
                         <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 ">
                             <a href="#slide1" class="btn btn-circle">❮</a>
                             <a href="#slide3" class="btn btn-circle">❯</a>
                         </div>
                     </div>
                 </div>
-                <div class=" w-auto lg:h-[16vh] bg-black px-4 py-8 rounded-2xl lg:w-1/2 absolute lg:right-5 lg:-translate-y-48">
+                <div
+                    class=" w-auto lg:h-[16vh] bg-black px-4 py-8 rounded-2xl lg:w-1/2 absolute lg:right-5 lg:-translate-y-48">
                     <h2 class="text-lg lg:text-2xl  text-white font-bold">Meet all the heroes from the field</h2>
-                    <p class=" text-zinc-200 text-sm mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi vitae maiores libero labore, omnis, praesentium cumque sunt, aperiam neque eum rem! Explicabo deserunt ipsam iusto autem, quos totam vero! Exercitationem.</p>
+                    <p class=" text-zinc-200 text-sm mt-4">A dynamic force on the ice, the skilled hockey player maneuvers with precision, scoring goals, and fostering teamwork for thrilling victories.</p>
                 </div>
             </div>
         </section>
