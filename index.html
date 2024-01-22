@@ -37,8 +37,9 @@
 </head>
 
 <body class="font-manrope">
-    <header>
-        <nav class="container w-11/12 mx-auto mt-7">
+    <!-- navbar section -->
+    <header class="container w-11/12 mx-auto">
+        <nav class="mt-7">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -52,7 +53,7 @@
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
                             <li><a class=" font-bold text-red-500">Home</a></li>
-                            
+
                             <li><a>About</a></li>
                             <li><a>Pages</a></li>
                             <li><a>Blog</a></li>
@@ -64,15 +65,15 @@
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
                         <li><a class=" font-bold text-red-500">Home</a></li>
-                            
-                            <li><a>About</a></li>
-                            <li><a>Pages</a></li>
-                            <li><a>Blog</a></li>
-                            <li><a>Contact</a></li>
+
+                        <li><a>About</a></li>
+                        <li><a>Pages</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
                     </ul>
                 </div>
                 <div class="navbar-end gap-4">
-                    <img src="Images/search-icon.svg" alt="">
+                    <img class="hidden sm:block" src="Images/search-icon.svg" alt="">
                     <a class="btn bg-red-500 text-white lg:w-36">Button</a>
                 </div>
             </div>
@@ -80,9 +81,10 @@
         </nav>
     </header>
 
-    <main>
+    <main class="container w-11/12 mx-auto">
+        <!-- banner section -->
         <section>
-            <div class="container w-11/12 mx-auto relative mt-4">
+            <div class=" relative mt-4">
                 <div class="carousel w-full rounded-2xl lg:h-[60vh]">
                     <div id="slide1" class="carousel-item relative w-full  ">
                         <img src="Images/trophy.png" class="w-full" />
@@ -99,14 +101,89 @@
                         </div>
                     </div>
                 </div>
-                <div
-                    class=" w-auto lg:h-[16vh] bg-black px-4 py-8 rounded-2xl lg:w-1/2 absolute lg:right-5 lg:-translate-y-48">
+                <div class=" w-auto  bg-black px-6 py-8 rounded-2xl lg:w-1/2 absolute lg:right-5 lg:-translate-y-48">
                     <h2 class="text-lg lg:text-2xl  text-white font-bold">Meet all the heroes from the field</h2>
-                    <p class=" text-zinc-200 text-sm mt-4">A dynamic force on the ice, the skilled hockey player maneuvers with precision, scoring goals, and fostering teamwork for thrilling victories.</p>
+                    <p class=" text-zinc-200 text-sm mt-4">A dynamic force on the ice, the skilled hockey player
+                        maneuvers with precision, scoring goals, and fostering teamwork for thrilling victories.</p>
                 </div>
             </div>
         </section>
 
+        <hr class="border-dashed mt-60 lg:mt-8">
+        <!-- card section -->
+        <section>
+
+            <div class="mt-8 text-center">
+                <h1 class="font-extrabold text-2xl lg:text-4xl text-black">Professional Hockeys Club</h1>
+                <p class="lg:w-3/5 m-auto mt-6 lg:mb-20 text-gray-400">A skilled professional hockey player excels on ice, showcasing
+                    precision, teamwork, and
+                    dedication, achieving remarkable goals and victories.</p>
+            </div>
+            <hr class="border-dashed mt-6 lg:mt-20">
+            
+            <div class=" grid grid-col-1 lg:grid-cols-4">
+                <div class="card bg-base-100 ">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress text-error" style="--value:87;" role="progressbar"> <span class="text-black text-2xl font-bold">87%</span></div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-bold text-xl">Prayer Facility</h2>
+                        <p class="text-gray-400 text-base">Fast-paced ice battles, goals, exhilarating victories.</p>
+                        <div class="card-actions">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-base-100 ">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress text-accent" style="--value:95;" role="progressbar"> <span class="text-black text-2xl font-bold">95%</span></div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-bold text-xl">Experienced Coach</h2>
+                        <p class="text-gray-400 text-base">Stickhandling mastery, precision passes, net-bound shots..</p>
+                        <div class="card-actions">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-base-100 ">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress text-warning" style="--value:90;" role="progressbar"> <span class="text-black text-2xl font-bold">90%</span></div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-bold text-xl">Senior Player</h2>
+                        <p class="text-gray-400 text-base">Crisp passes, one-timers, goalie's acrobatics.</p>
+                        <div class="card-actions">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-base-100 ">
+                    <figure class="px-10 pt-10">
+                        <div class="radial-progress text-info" style="--value:80;" role="progressbar"> <span class="text-black text-2xl font-bold">80%</span></div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-bold text-xl">Training Ground</h2>
+                        <p class="text-gray-400 text-base">Breakneck pace, hat-trick heroics, overtime thrill."</p>
+                        <div class="card-actions">
+
+                        </div>
+                    </div>
+                </div>
+                <hr class="border-dashed mt-6 lg:mt-20">
+                
+            </div>
+
+
+
+
+        </section>
+
+
+        
     </main>
 
     <footer>
